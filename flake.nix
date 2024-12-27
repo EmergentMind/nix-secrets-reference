@@ -39,13 +39,13 @@
             mac = "00:00:00:00:00:00";
           };
           hostname2 = {
-            name = "hostname1" ;
-            ip = "10.10.10.1";
+            name = "hostname2" ;
+            ip = "10.10.10.2";
             mac = "00:00:00:00:00:00";
           };
           hostname3 = {
-            name = "hostname1" ;
-            ip = "10.10.10.1";
+            name = "hostname3" ;
+            ip = "10.10.10.3";
             mac = "00:00:00:00:00:00";
             port = "42069";
           };
