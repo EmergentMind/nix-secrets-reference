@@ -1,0 +1,28 @@
+# pub keys
+keys:
+  - &users:
+    - &username1 <age key> #primary age key
+    - &username1_hostname1 <age key>
+    - &username1_hostname2 <age key>
+    - &username1_hostname3 <age key>
+    - &username1_hostname4 <age key>
+ - &hosts: # nix-shell -p ssh-to-age --run 'cat /etc/ssh/ssh_host_ed25519_key.pub | ssh-to-age'
+    - &hostname1 <age key>
+    - &hostname2 <age key>
+    - &hostname3 <age key>
+    - &hostname4 <age key>
+
+creation_rules:
+  #path should be relative to location of this file (.sops.yaml)
+  - path_regex: secrets.yaml$
+    key_groups:
+      - age:
+          - *username1
+          - *username1_hostname1
+          - *hostname1
+          - *username1_hostname2
+          - *hostname2
+          - *username1_hostname3
+          - *hostname3
+          - *username1_hostname4
+          - *hostname4
