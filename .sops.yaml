@@ -1,7 +1,6 @@
 # pub keys
 keys:
   - &users:
-    - &username1 <age key> #primary age key
     - &username1_hostname1 <age key>
     - &username1_hostname2 <age key>
     - &username1_hostname3 <age key>
@@ -14,15 +13,36 @@ keys:
 
 creation_rules:
   #path should be relative to location of this file (.sops.yaml)
-  - path_regex: secrets.yaml$
+  - path_regex: shared\.yaml$
     key_groups:
       - age:
-          - *username1
           - *username1_hostname1
           - *hostname1
           - *username1_hostname2
           - *hostname2
+  - path_regex: hostname1\.yaml$
+    key_groups:
+      - age:
+          - *username1_hostname1
+          - *hostname1
+  - path_regex: hostname2\.yaml$
+    key_groups:
+      - age:
+          - *username1_hostname1
+          - *hostname1
+          - *username1_hostname2
+          - *hostname2
+  - path_regex: hostname3\.yaml$
+    key_groups:
+      - age:
+          - *username1_hostname1
+          - *hostname1
           - *username1_hostname3
           - *hostname3
+  - path_regex: hostname4\.yaml$
+    key_groups:
+      - age:
+          - *username1_hostname1
+          - *hostname1
           - *username1_hostname4
           - *hostname4

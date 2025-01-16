@@ -1,0 +1,4 @@
+#NOTE: This is just an example of what an _unencrypted_ secrets.yaml file looks like when
+# you are editing it. In reality, in an encrypted state the contents of this file would look
+# significantly different and you would need to open it using sops. e.g. `sops secrets.yaml`
+smb-secrets: <password_data>
