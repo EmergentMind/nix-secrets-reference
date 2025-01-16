@@ -1,5 +1,5 @@
 {
-  description = "Reference example of EmergentMind's nix-secrets flake for passing private info to nix-config that doesn't necessarily need to be encrypted in secrets.yaml";
+  description = "Reference example of EmergentMind's nix-secrets flake - simple variant";
 
   outputs =
     { ... }: {
