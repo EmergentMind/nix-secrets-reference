@@ -2,7 +2,6 @@
 # you are editing it. In reality, in an encrypted state the contents of this file would look
 # significantly different and you would need to open it using sops. e.g. `sops secrets.yaml`
 keys:
-    age:
-        username1_hostname4: <key_data> 
+    age: <key_data> 
     ssh:
         keyname1: <key_data>
