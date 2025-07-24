@@ -11,7 +11,7 @@ This is a stripped-down, reference version of EmergentMinds's _private_ Nix-Secr
 For details on how this is accomplished, how to approach different scenarios, and troubleshooting for some common hurdles, please see the article and accompanying YouTube video [NixOS Secrets Management](https://unmovedcentre.com/posts/secrets-management/) available on my website. Note that some of the hierarchy and usage has evolved over time and while I attempt to update the article to match, I will inevitably miss something. Please feel free to let me know if you notice a discrepancy and I will make time to revise.
 
 ## What are nix-secrets?
-In brief, nix-secrets are collection of "soft" and "hard" secrets. Soft secrets are effectively evaluation-time variables that I don't want in my public nix-config, but don't need to be encrypted. An example of a soft secret is a work email for git. Hard secrets are things like tokens and passwords that need encrypting with sops-nix.
+In brief, nix-secrets are collection of "soft" and "hard" secrets. Soft secrets are effectively evaluation-time variables that I don't want in my public nix-config, but don't need to be encrypted. An example of a soft secret is a work email for git. Hard secrets are things like tokens, private ssh keys, and passwords that need encrypting with sops-nix.
 
 ## Contents:
 There are two branches in this repo, simple and complex.
