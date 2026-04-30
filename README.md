@@ -6,9 +6,11 @@
 
 # EmergentMind's Nix-Secrets Reference Repository
 
-This is a stripped-down, reference version of EmergentMinds's _private_ Nix-Secrets repo intended to help you set up your own. The actual, _private_ repository is pulled into [EmergentMind's _public_ Nix-Config](https://github.com/EmergentMind/nix-config) to automate provisioning of private information, passwords, and keys across hosts. 
+This is a stripped-down, reference version of EmergentMinds's _private_ Nix-Secrets repo intended to help you set up your own. The actual, _private_ repository is pulled into [EmergentMind's _public_ Nix-Config](https://codeberg.org/EmergentMind/nix-config) to automate provisioning of private information, passwords, and keys across hosts. 
 
 For details on how this is accomplished, how to approach different scenarios, and troubleshooting for some common hurdles, please see the article and accompanying YouTube video [NixOS Secrets Management](https://unmovedcentre.com/posts/secrets-management/) available on my website. Note that some of the hierarchy and usage has evolved over time and while I attempt to update the article to match, I will inevitably miss something. Please feel free to let me know if you notice a discrepancy and I will make time to revise.
+
+**April 30, 2026:** this and other nix related repos by EmergentMind on GitHub are now mirrored from repos of the same name at [https://codeberg.org/EmergentMind/](https://codeberg.org/EmergentMind/).
 
 ## What are nix-secrets?
 In brief, nix-secrets are collection of "soft" and "hard" secrets. Soft secrets are effectively evaluation-time variables that I don't want in my public nix-config, but don't need to be encrypted. An example of a soft secret is a work email for git. Hard secrets are things like tokens, private ssh keys, and passwords that need encrypting with sops-nix.
@@ -67,7 +69,7 @@ Depending on the activity required, some of the following packages will be requi
 
 Sincere thanks to all of my generous supporters!
 
-If you find what I do helpful, please consider supporting my work using one of the links under "Sponsor this project" on the right-hand column of this page.
+If you find what I do helpful, please consider supporting my work using one of the links under "Sponsor this project" on github the right-hand column of this page.
 
 I intentionally keep all of my content ad-free but some platforms, such as YouTube, put ads on my videos outside of my control.
 
